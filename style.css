@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    line-height: 1.7;
+}
+html{
+    
+}
+
+/* Header */
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url('sea.jpg');
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar */
+.navbar{
+    border: 1px solid white;
+    
+}
+.header .navbar .logo{
+    color: white;
+    float: left;
+}
+.header .navbar .nav-items{
+    float: right;
+    list-style-type: none;
+}
+.header .navbar .nav-item{
+    display: inline-block;
+}
+.header .navbar .nav-items .nav-item a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+@media screen and (max-width: 800px) {
+    .logo, .nav-items {
+      width: 100%;
+      text-align: center;
+    }
+  }
